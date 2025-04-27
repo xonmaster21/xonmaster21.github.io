@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Биография ShadowHVH</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/ico" href="media/icon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+</head>
+<body>
+    <!-- Вступительный экран -->
+    <div class="entry-screen">
+        <div class="entry-content">
+            click to <span class="enter-text">enter</span>
+        </div>
+    </div>
+	
+    <div class="container">
+        <div class="card">
+            <div class="glitch-wrapper">
+                <div class="glitch" data-text="ShadowHVH">ShadowHVH</div>
+            </div>
+            
+            <div class="avatar">
+                <img src="media/avatar.png" alt="Аватар">
+            </div>
+            
+            <div class="bio">♡ I'm c0d3rr <a href="https://dsc.gg/timesq" target="_blank" >TimeSQ</a> ♡</div>
+            
+            <div class="sparkles"></div>
+            
+            <div class="links">
+                <a class="link-card copy-btn" data-copy-text="shadowproter">
+                    <i class="fab fa-discord"></i>
+                    <span>Discord</span>
+                    <span class="copy-status">click to copy</span>
+                </a>
+                <a class="link-card copy-btn" data-copy-text="@shadowhvh21">
+                    <i class="fab fa-telegram"></i>
+                    <span>Telegram</span>
+                    <span class="copy-status">click to copy</span>
+                </a>
+				<a href="https://www.youtube.com/channel/UC_2C1-zQlG7MM1FfKCCm5rQ" target="_blank" class="link-card">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+				<a href="https://steamcommunity.com/id/HyperK/" target="_blank" class="link-card">
+                    <i class="fab fa-steam"></i>
+                    <span>Steam</span>
+                </a>
+				<a href="https://funpay.com/users/4611480/" target="_blank" class="link-card">
+                    <i class="fab fa-shopify"></i>
+                    <span>FunPay</span>
+                </a>
+				<!--<a href="https://www.roblox.com/users/1831738691/profile" target="_blank" class="link-card">
+                    <i class="fab fa-roblox"></i>
+                    <span>Roblox</span>
+                </a> -->
+            </div>
+            
+            <!-- <div class="visitors-counter">
+                <div class="counter-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="counter-info">
+                    <div class="counter-label">уникальные просмотры</div>
+                    <div class="counter-value" id="visitors-count">0</div>
+                </div>
+            </div> -->
+            
+            <div class="footer">
+                <p>♡ I'm c0d3rr By ShadowHVH ♡</p>
+            </div>
+        </div>
+        
+        <!-- Музыкальный плеер -->
+        <div class="music-player-panel card-music-player">
+            <div class="player-header">
+                <div class="player-title">
+                    <i class="fas fa-music"></i>
+                    <span>Music Player</span>
+                </div>
+                <button id="player-toggle-btn" class="player-toggle-btn">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            
+            <div class="player-content">
+                <div class="album-art">
+                    <img src="media/XtzGuhi.gif" alt="Album Art">
+                    <div class="album-overlay">
+                        <button id="music-toggle" class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="music-controls">
+                    <div class="song-info">
+                        <div class="song-title">PlayList</div>
+                        <div class="artist-name">Chill Mix</div>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="time current-time">00:00</div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress-current"></div>
+                            </div>
+                        </div>
+                        <div class="time total-time">00:00</div>
+                    </div>
+                    
+                    <div class="control-buttons">
+                        <button id="repeat-btn" class="ctrl-btn">
+                            <i class="fas fa-repeat"></i>
+                        </button>
+                        <button id="prev-btn" class="ctrl-btn" disabled>
+                            <i class="fas fa-step-backward"></i>
+                        </button>
+                        <button id="play-pause-btn" class="ctrl-btn main-play-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button id="next-btn" class="ctrl-btn" disabled>
+                            <i class="fas fa-step-forward"></i>
+                        </button>
+                        <button id="reload-btn" class="ctrl-btn">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                        <input type="range" id="volume-slider" min="0" max="100" value="25" class="volume-slider">
+                    </div>
+                </div>
+                
+                <audio id="background-music" preload="auto" loop>
+                    <source src="media/music.mp3" type="audio/mp3">
+                    <source src="media/music.mp3" type="audio/mpeg">
+                    <p>Ваш браузер не поддерживает аудио элемент.</p>
+                </audio>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
